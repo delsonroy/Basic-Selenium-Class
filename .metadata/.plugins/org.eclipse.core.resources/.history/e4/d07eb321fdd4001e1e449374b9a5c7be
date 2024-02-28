@@ -1,0 +1,20 @@
+package day14;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo1 {
+//child browser - window popup
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver(); // opening the window session
+		String w1 = driver.getWindowHandle();  // getting the windowsessionid
+		System.out.println(w1);
+		driver.quit();
+		
+		
+	
+		
+	}
+
+}

@@ -1,0 +1,47 @@
+package day13;
+
+import java.io.File;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo8 {
+
+	public static void main(String[] args) {
+		
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://eprocure.gov.in/eprocure/app?page=StandardBiddingDocuments&service=page");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//a[text()='Downloads']")).click();
+		
+		driver.findElement(By.xpath("//a[text()='resources.pdf']")).click();
+		
+		   String downloadPath = "C://Users//USER//Downloads";
+	       String fileName = "resources.pdf";
+	        File file = new File(downloadPath + File.separator + fileName);
+	       
+	        
+	      System.out.println(file.getName());
+	        System.out.println(file.getPath());
+	        boolean fileExists = file.exists();
+
+	        // Print the result of verification
+	        if (fileExists) {
+	            System.out.println("PDF file exists in the download directory.");
+	        } else {
+	            System.out.println("PDF file does not exist in the download directory.");
+	        }
+
+	        // Close the browser
+	        driver.quit();
+	
+		
+		
+		// 
+
+	}
+
+}

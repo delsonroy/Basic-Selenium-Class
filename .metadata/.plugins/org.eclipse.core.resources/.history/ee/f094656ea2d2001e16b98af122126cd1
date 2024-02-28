@@ -1,0 +1,25 @@
+package day13;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo8 {
+
+	public static void main(String[] args) {
+		
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://eprocure.gov.in/eprocure/app?page=StandardBiddingDocuments&service=page");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//a[text()='Downloads']")).click();
+		
+		driver.findElement(By.xpath("//a[text()='resources.pdf']")).click();
+		
+		
+		// 
+
+	}
+
+}

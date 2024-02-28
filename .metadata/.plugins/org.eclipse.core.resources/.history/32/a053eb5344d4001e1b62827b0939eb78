@@ -1,0 +1,22 @@
+package day13;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo12 {
+
+	public static void main(String[] args) {
+
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///F:/Selenium/webpages/pages/Sample11.html");
+		
+		driver.findElement(By.xpath("//a[text()='Child window']")).click();
+		
+		String wh=driver.getWindowHandle();
+		
+		System.out.println(wh);
+		
+	}
+
+}

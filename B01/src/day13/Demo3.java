@@ -1,0 +1,43 @@
+package day13;
+
+import java.io.File;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo3 {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("file:///F:/Selenium/webpages/MyWebPages/Sample11.html");
+		Thread.sleep(1000);
+		
+		
+		
+		File f = new File("./Mydoc/Delson_Roy_OrderPicker.docx");
+		
+//		String absolutepath=f.getAbsolutePath();
+//		
+//		System.out.println(absolutepath);
+		
+		
+		
+		
+		driver.findElement(By.id("A2")).sendKeys("F:\\Selenium\\TCS\\DelsonRoy_Resume_QA 7Years.docx");
+		
+		
+		
+		
+		
+//		File f= new File("./Mydoc/Delson_Roy_OrderPicker.docx");
+//		String abspath = f.getAbsolutePath();
+//		System.out.println(f.getAbsolutePath());
+//		
+//		driver.findElement(By.id("A2")).sendKeys(abspath);
+		
+
+	}
+
+}

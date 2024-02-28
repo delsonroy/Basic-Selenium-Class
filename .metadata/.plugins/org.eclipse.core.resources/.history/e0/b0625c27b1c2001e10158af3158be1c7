@@ -1,0 +1,18 @@
+package day01;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Demo1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		ChromeDriver driver = new ChromeDriver(); // created the object of ChromeDriver class
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		// driver is the reference variable
+		Thread.sleep(3000);
+		driver.close();
+		
+		
+	}
+
+}

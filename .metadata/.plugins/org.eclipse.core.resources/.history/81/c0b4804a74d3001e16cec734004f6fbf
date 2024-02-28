@@ -1,0 +1,24 @@
+package day13;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo11 {
+
+	public static void main(String[] args) {
+		
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("file:///F:/Selenium/webpages/pages/Sample11.html");
+		
+		driver.findElement(By.cssSelector("a[id='A3']")).click();
+		
+		driver.findElement(By.cssSelector("a[id='PageLink_5']")).click();
+		
+		driver.findElement(By.cssSelector("a#DirectLink_20")).click();
+		
+
+	}
+
+}
