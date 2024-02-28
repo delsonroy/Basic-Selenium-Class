@@ -24,7 +24,7 @@ public class Demo10 {
 		{
 			driver.switchTo().window(tab);
 			System.out.println(driver.getTitle());
-			tab
+		
 		}
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='Get started']")).click();
