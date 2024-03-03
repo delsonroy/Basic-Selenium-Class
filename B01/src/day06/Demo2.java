@@ -15,7 +15,6 @@ public class Demo2 {
 
 		        // Open the webpage
 		        
-		        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		        driver.get("https://the-internet.herokuapp.com/login");
 		        
 		        // Find the sentence containing the username and password
